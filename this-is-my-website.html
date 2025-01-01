@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 
 <script>
-document.getElementById("googlelink").addEventListener("click", redirectToYahoo());
-document.getElementById("googlelink").addEventListener("auxclick", redirectToYahooNewTab());
+document.getElementById("googlelink").addEventListener("click", redirectToMainPage());
 
- function redirectToYahoo() {
-    window.location.href = "https://www.yahoo.com";
+ function redirectToMainPage() {
+    window.location.href = "https://spag.site/";
   }
-
- function redirectToYahooNewTab() {
-    window.open('https://www.yahoo.com', '_blank');
- }
 
 </script>
