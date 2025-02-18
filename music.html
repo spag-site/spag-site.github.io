@@ -52,6 +52,20 @@
 					<li>4: <a href="https://open.spotify.com/track/7f9I5WdyXm5q1XqnSYgQZb?si=deb3021431bb4957" target="_blank">Brianstorm</a></li>
 					<li>5: <a href="https://open.spotify.com/track/45n7uujqwmMyBMjBu9SwRu?si=e823fd8f169d4c5b" target="_blank">Pretty Visitors</a></li>
 				</ul>
+
+			<div style="position: relative">
+			<div id="meow" data-hover-text="zzz..."><img src="/assets/img/meow.png" draggable="false"></div>
+			<script>
+			meow.onmouseover = () => {
+			new Audio("/assets/audo/meow.mp3").load();
+			}
+			mewo.onclick = () => {
+			const a = new Audio("/assets/audio/meow.mp3");
+			a.currentTime = 0.1; a.play();
+			meow.setAttribute("data-hover-text", "Waiting for something to happen?");
+			}
+</script>
+</div>
 		</main>
 	</body>
 </html>
