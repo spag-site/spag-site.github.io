@@ -54,12 +54,12 @@
 				</ul>
 
 			<div style="position: right">
-			<div id="meow" data-hover-text="zzz..."><img src="/assets/img/meow.png" draggable="false" style="width:64;height:64;"></div>
+			<div id="meow" data-hover-text="zzz..."><img src="/assets/img/meow.png" draggable="false" style="width:128px;height:128px;"></div>
 			<script>
 			meow.onmouseover = () => {
 			new Audio("/assets/audio/meow.mp3").load();
 			}
-			mewo.onclick = () => {
+			meow.onclick = () => {
 			const a = new Audio("/assets/audio/meow.mp3");
 			a.currentTime = 0.1; a.play();
 			meow.setAttribute("data-hover-text", "Waiting for something to happen?");
