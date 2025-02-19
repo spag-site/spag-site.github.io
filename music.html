@@ -54,19 +54,21 @@
 				</ul>
 
 			<div style="float:right;">
-			<div id="meow" title="zzz..."><img src="/assets/img/meow-asleep.gif" draggable="false" style="image-rendering:pixelated;"></div>
-			<script>
-			meow.onmouseover = () => {
-			new Audio("/assets/audio/meow.mp3").load();
-			new Image().src = "/static/img/meow-awake.gif";
-			}
-			meow.onclick = () => {
-			const a = new Audio("/assets/audio/meow.mp3");
-			a.currentTime = 0.1; a.play();
-			meow.setAttribute("title", "miaow?");
-			meow.childNodes[0].src = "/assets/img/meow-awake.gif";
-			}
-			</script>
+				<div id="meow" data-hover-text="zzz...">
+					<img src="/assets/img/meow-asleep.gif" draggable="false" style="image-rendering:pixelated;">
+				</div>
+				<script>
+					meow.onmouseover = () => {
+						new Audio("/assets/audio/meow.mp3").load();
+						new Image().src = "/static/img/meow-awake.gif";
+					}
+					meow.onclick = () => {
+						const a = new Audio("/assets/audio/meow.mp3");
+						a.currentTime = 0.1; a.play();
+						meow.setAttribute("data-hover-text", "miaow?");
+						meow.childNodes[0].src = "/assets/img/meow-awake.gif";
+					}
+				</script>
 			</div>
 		</main>
 	</body>
