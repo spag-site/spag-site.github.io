@@ -54,7 +54,7 @@
 				</ul>
 
 			<div style="float:right;">
-				<div id="meow" data-hover-text="zzz...">
+				<div id="meow">
 					<img src="/assets/img/meow-asleep.gif" draggable="false" style="image-rendering:pixelated;">
 				</div>
 				<script>
@@ -65,7 +65,6 @@
 					meow.onclick = () => {
 						const a = new Audio("/assets/audio/meow.mp3");
 						a.currentTime = 0.1; a.play();
-						meow.setAttribute("data-hover-text", "miaow?");
 						meow.childNodes[0].src = "/assets/img/meow-awake.gif";
 					}
 				</script>
