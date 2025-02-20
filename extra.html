@@ -22,7 +22,7 @@
 			<h2>buttons</h2>
 			<div class="c88x31">
 				<a href="https://spag.site/"><img src="/assets/img/spag.site-button.gif" draggable="false" alt="https://spag.site/ button"></a>
-				<img src="/assets/img/best_viewed_with_eyes.gif" draggable="false" alt="best viewed with eyes button">
+				<a><img src="/assets/img/best_viewed_with_eyes.gif" id="eyes" draggable="false" alt="best viewed with eyes button"></a>
 				<img src="/assets/img/dont_feed_the_ai.gif" draggable="false" alt="dont feed the ai button">
 				<img src="/assets/img/dvd.png" draggable="false" alt="dvd logo button">
 				<img src="/assets/img/flag-lesbian.png" draggable="false" alt="lesbian flag button">
@@ -47,6 +47,13 @@
 					const a = new Audio("/assets/audio/youvegotmail.mp3");
 					a.currentTime = 0.1; 
 					a.play();
+				}
+
+				eyes.onclick = () => {
+				        let e = v.createElement("div");
+      					e.classList.add("blink"),
+        				v.body.append(e),
+        				x( () => e.remove(), 400)
 				}
 			</script>
 
