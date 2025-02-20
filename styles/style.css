@@ -247,3 +247,15 @@ nav span::after {
 main {
 	margin-block-start: 1.1rem;
 }
+
+.blink {
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    width: 200vw;
+    height: 100vh;
+    z-index: 999999;
+    background-image: radial-gradient(circle,transparent 0,#000 100%);
+    animation: .4s ease-in-out blink;
+    opacity: 0
+}
