@@ -248,7 +248,7 @@ main {
 	margin-block-start: 1.1rem;
 }
 
-.blink {
+blink {
     position: fixed;
     top: 0;
     left: -50vw;
