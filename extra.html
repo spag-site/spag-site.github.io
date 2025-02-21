@@ -39,26 +39,6 @@
 				<img src="/assets/img/bunbrowser.gif" draggable="false" alt="bunny browser button">
 			</div>
 
-			<script>
-				clickhere.onmouseover = () => {
-					new Audio("/assets/audio/youvegotmail.mp3").load();
-				}
-				,
-				clickhere.onclick = () => {
-					const a = new Audio("/assets/audio/youvegotmail.mp3");
-					a.currentTime = 0.1; 
-					a.play();
-				}
-				,
-				eyes.onclick = () => {
-   					let e = v.createElement("div");
-					e.classList.add("blink"),
-					v.body.append(e),
-					foundSecret("blink"),
-       					x( () => e.remove(), 400)
-				}
-			</script>
-
 			<h2>random</h2>
 				<p><a href="/pages">pages</a> <small>a list of all pages</small></p>
 
