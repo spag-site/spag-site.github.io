@@ -39,6 +39,118 @@
 				<img src="/assets/img/bunbrowser.gif" draggable="false" alt="bunny browser button">
 			</div>
 
+			<script>
+				clickhere.onmouseover = () => {
+					new Audio("/assets/audio/youvegotmail.mp3").load();
+				}
+				,
+				clickhere.onclick = () => {
+					const a = new Audio("/assets/audio/youvegotmail.mp3");
+					a.currentTime = 0.1; 
+					a.play();
+				}
+				,
+				eyes.onclick = () => {
+					let e = v.createElement("div");
+					e.classList.add("blink"),
+					v.body.append(e),
+					foundSecret("blink"),
+					x( () => e.remove(), 400)
+				}
+			</script>
+
+			<style>
+				.b {
+					display: flex;
+					user-select: none;
+					padding-right: 6px;
+					text-decoration: none;
+					align-items: center;
+					gap: 6px
+				}
+
+				.b:focus,.b:hover {
+					outline: 0;
+					color: #fff!important;
+					background-color: #000;
+					filter: invert(1)
+				}
+
+				.b img {
+					width: 24px;
+					height: 24px
+				}
+
+				.blink {
+					position: fixed;
+					top: 0;
+					left: -50vw;
+					width: 200vw;
+					height: 100vh;
+					z-index: 999999;
+					background-image: radial-gradient(circle,transparent 0,#000 100%);
+					animation: .4s ease-in-out blink;
+					opacity: 0
+				}
+
+				@keyframes blink {
+					0% {
+        					background-color: rgba(0,0,0,0);
+        					opacity: 0
+						}
+
+					50% {
+						background-color: rgba(0,0,0,.8);
+						opacity: 1
+					}
+				}
+
+				.c88x31 {
+    					display: flex;
+					justify-content: center;
+					user-select: none;
+					max-width: unset;
+					flex-wrap: wrap
+				}
+
+				.c88x31 a,.c88x31 img {
+					width: 88px;
+					height: 31px
+				}
+
+				.c88x31 a {
+					cursor: pointer
+				}
+
+				input[type=text] {
+					font-family: inherit;
+					font-size: inherit;
+					color: inherit;
+					background: #1c1c1c;
+					border: 2px solid #666;
+					padding: 8px;
+					outline: 0
+				}
+
+				.collide {
+					filter: brightness(200%);
+					background: rgba(255,255,255,.2);
+					outline: rgba(255,255,255,.2) solid 2px
+				}
+
+				input[type=text]:focus {
+					border-color: #fff
+				}
+
+				@media screen and (max-width: 640px) {
+					#s_cn {
+						display:flex;
+						justify-content: center
+					}
+				}
+
+			</style>
+
 			<h2>random</h2>
 				<p><a href="/pages">pages</a> <small>a list of all pages</small></p>
 
