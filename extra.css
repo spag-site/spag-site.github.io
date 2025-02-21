@@ -1,3 +1,25 @@
+/* All rights reserved. (c) https://zptr.cc/ */
+.b {
+    display: flex;
+    user-select: none;
+    padding-right: 6px;
+    text-decoration: none;
+    align-items: center;
+    gap: 6px
+}
+
+.b:focus,.b:hover {
+    outline: 0;
+    color: #fff!important;
+    background-color: #000;
+    filter: invert(1)
+}
+
+.b img {
+    width: 24px;
+    height: 24px
+}
+
 .blink {
     position: fixed;
     top: 0;
@@ -19,5 +41,49 @@
     50% {
         background-color: rgba(0,0,0,.8);
         opacity: 1
+    }
+}
+
+.c88x31 {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    max-width: unset;
+    flex-wrap: wrap
+}
+
+.c88x31 a,.c88x31 img {
+    width: 88px;
+    height: 31px
+}
+
+.c88x31 a {
+    cursor: pointer
+}
+
+input[type=text] {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: #1c1c1c;
+    border: 2px solid #666;
+    padding: 8px;
+    outline: 0
+}
+
+.collide {
+    filter: brightness(200%);
+    background: rgba(255,255,255,.2);
+    outline: rgba(255,255,255,.2) solid 2px
+}
+
+input[type=text]:focus {
+    border-color: #fff
+}
+
+@media screen and (max-width: 640px) {
+    #s_cn {
+        display:flex;
+        justify-content: center
     }
 }
