@@ -26,3 +26,4 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
 		document.body.append(e),
 		setTimeout(() => e.remove(), 400);
 	}
+}
