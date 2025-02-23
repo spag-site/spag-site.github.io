@@ -24,5 +24,5 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
 		let e = document.createElement("div");
 		e.classList.add("blink"),
 		document.body.append(e),
-		x( () => e.remove(), 400)
+		setTimeout(() => e.remove(), 400);
 	}
