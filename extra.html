@@ -42,10 +42,6 @@
 			</div>
 
 			<script>
-				v = () => {
-					m = S = 0
-				}
-				,
 				clickhere.onmouseover = () => {
 					new Audio("/assets/audio/youvegotmail.mp3").load();
 				}
@@ -66,9 +62,9 @@
 				}
 				,
 				eyes.onclick = () => {
-					let e = v.createElement("div");
+					let e = createElement("div");
 					e.classList.add("blink"),
-					v.body.append(e),
+					body.append(e),
 					x( () => e.remove(), 400)
 				}
 			</script>
