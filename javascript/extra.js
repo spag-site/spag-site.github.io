@@ -21,8 +21,9 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
 	}
 	,
 	eyes.onclick = () => {
-		let e = v.createElement("div");
+		let e = document.createElement("div");
 		e.classList.add("blink"),
-		v.body.append(e),
+		document.body.append(e),
 		x( () => e.remove(), 400)
 	}
+}
