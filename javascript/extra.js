@@ -12,8 +12,8 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
     	,
 	duck.onmouseover = () => {
 		new Audio("/assets/audio/quack.mp3").load();
-		}
-		,
+	}
+	,
 	duck.onclick = () => {
 		const a = new Audio("/assets/audio/quack.mp3");
 		a.currentTime = 0.1;
