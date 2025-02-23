@@ -26,4 +26,3 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
 		v.body.append(e),
 		x( () => e.remove(), 400)
 	}
-}
