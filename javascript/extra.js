@@ -9,7 +9,7 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
 		a.currentTime = 0.1; 
 		a.play();
 	}
-    ,
+    	,
 	duck.onmouseover = () => {
 		new Audio("/assets/audio/quack.mp3").load();
 		}
