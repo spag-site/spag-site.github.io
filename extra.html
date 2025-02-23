@@ -37,6 +37,8 @@
 				<img src="/assets/img/www.gif" draggable="false" alt="world wide web button">
 				<img src="/assets/img/yahoomail.gif" draggable="false" alt="yahoo mail button">
 				<img src="/assets/img/bunbrowser.gif" draggable="false" alt="bunny browser button">
+				<img src="/assets/img/internet-roadkill.gif" draggable="false" alt="internet roadkill">
+				<a><img src="/assets/img/duck.gif" draggable="false" id="duck" alt="twirly yellow thing"></a>
 			</div>
 
 			<script>
@@ -47,6 +49,15 @@
 				clickhere.onclick = () => {
 					const a = new Audio("/assets/audio/youvegotmail.mp3");
 					a.currentTime = 0.1; 
+					a.play();
+				}
+				duck.onmouseover = () => {
+					new Audio("/assets/audio/quack.mp3").load();
+				}
+				,
+				duck.onclick = () => {
+					const a = new Audio("/assets/audio/quack.mp3");
+					a.currentTime = 0.1;
 					a.play();
 				}
 				,
