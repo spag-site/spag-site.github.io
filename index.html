@@ -36,10 +36,10 @@
 			<p><iframe id="bucket-webring" style="width: 100%; height: 2rem; border: none;" src="https://spag.site/bucket-webring/embed.html?name=spagwhetti"></iframe></p>
 			<p>
 				<div class="noai-webring" style="width: 200%; height: 2rem; border: none; font-size: 14;">
-					<a href="https://baccyflap.com/noai/?prv&s=spa" id="left" target="_top">« prev</a> |
-					<a href="https://baccyflap.com/noai" id="mid" target="_blank">no ai webring</a>
+					<span id="left"><a href="https://baccyflap.com/noai/?prv&s=spa" target="_top">« prev</a></span> |
+					<span id="mid"><a href="https://baccyflap.com/noai" id="mid" target="_blank">no ai webring</a></span>
 					<a style="font-size:60%" href="https://baccyflap.com/noai/?rnd" target="_top">(random)</a> |
-					<a href="https://baccyflap.com/noai/?nxt&s=spa" id="right" target="_top">next »</a>
+					<span id="right"><a href="https://baccyflap.com/noai/?nxt&s=spa" id="right" target="_top">next »</a></span>
 				</div>
 			</p>
 			<iframe src="https://silly.city/embed.html?user=your-username" title="silly.city webring" frameborder="no"></iframe>
@@ -47,6 +47,11 @@
 				#left { text-align: left; }
 				#mid { text-align: center; }
 				#right { text-align: right; }
+
+				#left, #right {
+        				flex-grow: 1;
+        				flex-basis: 0;
+      				}
 			</style>
 		</main>
 	</body>
