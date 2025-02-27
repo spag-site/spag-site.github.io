@@ -7,10 +7,7 @@
 
     <title></title>
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-
+    <style src="/styles/style.css">
       :root {
           --red: #ffcaca;
           --orange: #ffedc1;
@@ -24,14 +21,11 @@
 
 
           --background: #0a0a0a;
-
-
-          --rainbowright: linear-gradient(to right, var(--red) 0%, var(--orange) 20%, var(--yellow) 40%, var(--green) 60%, var(--blue) 80%,  var(--purple) 100%);
       }
 
       * {
-        font-family: Merriweather, Georgia, serif;
-        color: var(--purple);
+        font-family: inherit;
+        color: var(--white);
       }
 
       html {
@@ -59,13 +53,11 @@
         display: inline-block;
         color: inherit;
         position: relative;
-        text-decoration: none;
-        transition: linear 0.2s;
         color: var(--purple);
       }
 
       a:before {
-        background: var(--rainbowright);
+        background: var(--blue;
         content: '';
         height: 2px;
         position: absolute;
@@ -77,7 +69,7 @@
       }
 
       a:hover{
-        color: var(--white);
+        color: var(--blue);
       }
 
       a:hover:before{
@@ -95,9 +87,9 @@
     </style>
   </head>
   <body>
-    <span id="left">⥼ <a href="https://baccyflap.com/noai/?prv&s=spa" id="prev">prev</a></span>
+    <span id="left">« <a href="https://baccyflap.com/noai/?prv&s=spa" id="prev">prev</a></span>
     <span id="mid"> 🤖 <a href="https://baccyflap.com/noai" id="header">no-ai webring</a> 🤖 </span>
     <span id="mid"><a href="https://baccyflap.com/noai/?rnd" id="random" style="font-size:60%;">(random)</a></span>
-    <span id="right"><a href="https://baccyflap.com/noai/?nxt&s=spa" id="next">next</a> ⥽</span>
+    <span id="right"><a href="https://baccyflap.com/noai/?nxt&s=spa" id="next">next</a> »</span>
   </body>
 </html>
