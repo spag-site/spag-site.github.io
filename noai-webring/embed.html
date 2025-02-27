@@ -7,24 +7,18 @@
 
     <title></title>
 
-    <style src="/styles/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
       :root {
-          --red: #ffcaca;
-          --orange: #ffedc1;
-          --yellow: #feffb8;
-          --green: #c4ffcb;
-          --blue: #add8ff;
-          --purple: #ccafe9;
-
-          --darkgreen: #3E885B;
-          --darkblue: #7fb4f5;
-
-
+          --blue: #60a5fa;
+          --white: #ffffff
           --background: #0a0a0a;
       }
 
       * {
-        font-family: inherit;
+        font-family: Merriweather, Georgia, serif;
         color: var(--white);
       }
 
@@ -53,11 +47,13 @@
         display: inline-block;
         color: inherit;
         position: relative;
-        color: var(--purple);
+        text-decoration: none;
+        transition: linear 0.2s;
+        color: var(--white);
       }
 
       a:before {
-        background: var(--blue;
+        background: var(--blue);
         content: '';
         height: 2px;
         position: absolute;
