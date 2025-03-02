@@ -95,9 +95,14 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const name = urlParams.get('name');
+    const colour = urlParams.get('colour')
 
+    if (colour){
+      var r = document.querySelector(':root');
+      r.style.setProperty('--background', colour);
+    }
+    
     const left = document.getElementById("prev")
-
     const right = document.getElementById("next")
 
     fetch(DATA_FOR_WEBRING)
