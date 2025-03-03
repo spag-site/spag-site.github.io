@@ -11,14 +11,14 @@
       @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
       :root {
-          --white: #ffffff;
-          --red: #d92941;
+          --textcolour: #ffffff;
+          --linkcolour: #d92941;
           --background: #0a0a0a;
       }
 
       * {
         font-family: 'JetBrains Mono NL', 'JetBrains Mono', monospace;
-        color: var(--white);
+        color: var(--textcolour);
       }
 
       html {
@@ -48,11 +48,11 @@
         position: relative;
         text-decoration: none;
         transition: linear 0.2s;
-        color: var(--white);
+        color: var(--textcolour);
       }
 
       a:before {
-        background: var(--red);
+        background: var(--linkcolour);
         content: '';
         height: 2px;
         position: absolute;
@@ -64,7 +64,7 @@
       }
 
       a:hover{
-        color: var(--red);
+        color: var(--linkcolour);
       }
 
       a:hover:before{
@@ -95,11 +95,23 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const name = urlParams.get('name');
-    const colour = urlParams.get('colour')
+    const colour = urlParams.get('colour');
+    const textcolour = urlParams.get('textcolour')
+    const linkcolour = urlParams.get('linkcolour')
 
     if (colour){
       var r = document.querySelector(':root');
       r.style.setProperty('--background', colour);
+    }
+
+    if (textcolour){
+      var r = document.querySelector(':root');
+      r.style.setProperty('--textcolour', textcolour);
+    }
+
+    if (linkcolour){
+      var r = document.querySelector(':root');
+      r.style.setProperty('--linkcolour', linkcolour);
     }
     
     const left = document.getElementById("prev")
