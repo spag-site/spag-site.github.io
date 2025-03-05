@@ -33,6 +33,9 @@
 							const pet = document.getElementById("pfp");
 
 							pfp.addEventListener("click", function() {
+								const a = new Audio("/assets/audio/click.mp3");
+								a.currentTime = 0.1; 
+								a.play();
 								if (pet.src.endsWith("profile-picture.jpg")) {
 									pet.src = "/assets/img/pet-spagwhetti.gif";
 								} else {
