@@ -27,20 +27,19 @@
 			<br>
 			<h1>welcome!</h1>
 				<div class="card">
-					<div class="left" id="pfp">
+					<div class="left">
+						<img src="/assets/img/profile-picture.jpg" id="pfp" style="width:50px;height:50px;" draggable="false" alt="profile picture">
 						<script>
-							// JavaScript code
 							const pet = document.getElementById("pfp");
 
 							pfp.addEventListener("click", function() {
-								if (pet.src.endsWith("assets/img/profile-picture.jpg")) {
+								if (pet.src.endsWith("profile-picture.jpg")) {
 									pet.src = "/assets/img/pet-spagwhetti.gif";
 								} else {
-									pet.src = "assets/img/profile-picture.jpg";
+									pet.src = "/assets/img/profile-picture.jpg";
 								}
 							});
 						</script>
-						<img src="/assets/img/profile-picture.jpg" style="width:50px;height:50px;" draggable="false" alt="profile picture">
 					</div>
 					<div class="right">
 						<p>Hello, I'm <strong>spagwhetti</strong>, this is my home on the internet. I am from the UK and like cats <small>(I have 2 of my own!)</small>, playing games and coding.</p>
