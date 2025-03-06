@@ -29,6 +29,7 @@ body {
 	font-feature-settings: 'liga' 0;
 	max-width: 80ch;
 	margin: 0 auto;
+	background-image: url('/assets/img/background.png')
 	padding: 16px;
 }
 
