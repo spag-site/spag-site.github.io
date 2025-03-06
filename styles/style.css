@@ -261,7 +261,8 @@ main {
 	content: attr(data-hover-text);
 	background: var(--background-primary);
 	pointer-events: none;
-	border: 2px solid #ffffff;
+	border-color: #ffffff;
+	border-style: dashed;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
