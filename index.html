@@ -42,7 +42,9 @@
 								a.play();
 								if (pet.src.endsWith("profile-picture.jpg")) {
 									pet.src = "/assets/img/pet-spagwhetti.gif";
-								} else {
+								} else if (pet.src.endsWith("pet-spagwhetti.gif")) {
+									pet.src = "/assets/img/smile.gif";
+								} else if (pet.src.endsWith("smile.gif")) {
 									pet.src = "/assets/img/profile-picture.jpg";
 								}
 							});
