@@ -249,37 +249,37 @@ main {
 }
 
 [data-hover-text] {
-    text-decoration: 1px dotted underline;
-    cursor: pointer
+	text-decoration: 2px underline;
+	cursor: pointer
 }
 
 [data-hover-text]:focus,[data-hover-text]:hover {
-    position: relative
+	position: relative
 }
 
 [data-hover-text]:focus::after,[data-hover-text]:hover::after {
-    content: attr(data-hover-text);
-    background: rgba(0,0,0,.8);
-    pointer-events: none;
-    border: 2px dotted #fff;
-    position: absolute;
-    bottom: 0;
+	content: attr(data-hover-text);
+	background: var(--background-primary);
+	pointer-events: none;
+	border: 2px solid #ffffff;
+	position: absolute;
+	bottom: 0;
 	left: 50%;
-    transform: translateX(-50%) translateY(100%);
-    z-index: 99999999;
-    width: max-content;
-    word-wrap: break-word;
-    max-width: 50vw;
-    padding: 8px;
-    color: #fff
+	transform: translateX(-50%) translateY(100%);
+	z-index: 99999999;
+	width: max-content;
+	word-wrap: break-word;
+	max-width: 50vw;
+	padding: 8px;
+	color: #ffffff
 }
 
 :root:has([data-hover-text]:hover) [data-hover-text]:focus {
-    display: none!important
+	display: none!important
 }
 
 @media screen and (max-width: 350px) {
-    [data-hover-text]:focus::after,[data-hover-text]:hover::after {
-        display:none
-    }
+	[data-hover-text]:focus::after,[data-hover-text]:hover::after {
+	display:none
+	}
 }
