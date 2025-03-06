@@ -27,6 +27,7 @@
 				<li>blur</li>
 				<li>radiohead</li>
 				<li>gorillaz</li>
+				<li>the fratellis</li>
 				<li>the strokes</li>
 				<li>interpol</li>
 				<li>the killers</li>
@@ -54,20 +55,20 @@
 				</ul>
 
 			<div style="float:right;">
-				<div id="meow">
+				<div id="meow" data-hover-text="meow~~">
 					<img src="/assets/img/meow-asleep.gif" draggable="false" style="image-rendering:pixelated;">
 				</div>
 				<script>
-					meow.onmouseover = () => {
-						new Audio("/assets/audio/meow.mp3").load();
-						new Image().src = "/assets/img/meow-awake.gif";
-					}
-					meow.onclick = () => {
+					const meow = document.getElementById("meow");
+
+					meow.addEventListener("click", function() {
 						const a = new Audio("/assets/audio/meow.mp3");
-						a.currentTime = 0.1; 
+						a.currentTime = 0.0; 
 						a.play();
-						meow.childNodes[0].src = "/assets/img/meow-awake.gif";
-					}
+						if (meow.src.endsWith("meow-asleep.gif")) {
+							meow.src = "/assets/img/meow-awake.gif";
+						}
+					});
 				</script>
 			</div>
 		</main>
