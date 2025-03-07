@@ -11,7 +11,7 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
         } else if (clickhere.src.endsWith("clickhere_blue")) {
             clickhere.src = "/assets/img/clickhere_red.gif";
         }
-    });
+    }),
     duck.onmouseover = () => {
         new Audio("/assets/audio/quack.mp3").load();
     },
@@ -25,7 +25,7 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
         e.classList.add("blink"),
         document.body.append(e),
         setTimeout(() => e.remove(), 400);
-    }
+    },
     ygm.onmouseover = () => {
         new Audio("/assets/audio/youvegotmail.mp3").load();
     },
