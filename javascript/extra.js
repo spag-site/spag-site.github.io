@@ -8,7 +8,7 @@ BUNDLE_VER = "c302ed7ee42cd709e3cc0475d7cadf5b";
             clickhere.src = "/assets/img/clickhere_yellow.gif";
         } else if (clickhere.src.endsWith("clickhere_yellow.gif")) {
             clickhere.src = "/assets/img/clickhere_blue.gif";
-        } else if (clickhere.src.endsWith("clickhere_blue")) {
+        } else if (clickhere.src.endsWith("clickhere_blue.gif")) {
             clickhere.src = "/assets/img/clickhere_red.gif";
         }
     });
