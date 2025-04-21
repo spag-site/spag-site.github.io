@@ -16,27 +16,42 @@ fetch(galleryDataUrl)
     // Clear the gallery content
     gallery.innerHTML = '';
 
-    // Iterate through the data and create <details> sections
-    data.employees.forEach(employee => {
-      const details = document.createElement('details');
-      const summary = document.createElement('summary');
-      const detailsContent = document.createElement('div');
+    // Iterate through the data to create nested <details> sections
+    data.forEach(yearData => {
+      for (const year in yearData) {
+        // Create the year <details> section
+        const yearDetails = document.createElement('details');
+        const yearSummary = document.createElement('summary');
+        yearSummary.textContent = year; // Set year as the summary text
+        yearDetails.appendChild(yearSummary);
 
-      // Set the summary text (e.g., employee's name)
-      summary.textContent = `${employee.firstName} ${employee.lastName}`;
+        // Iterate through the months for the year
+        const months = yearData[year];
+        for (const month in months) {
+          // Create the month <details> section
+          const monthDetails = document.createElement('details');
+          const monthSummary = document.createElement('summary');
+          monthSummary.textContent = month; // Set month as the summary text
+          monthDetails.appendChild(monthSummary);
 
-      // Set the details content (e.g., additional info about the employee)
-      detailsContent.innerHTML = `
-        <p>Position: ${employee.position}</p>
-        <p>Email: ${employee.email}</p>
-      `;
+          // Add files for the month
+          const filesList = document.createElement('ul'); // Use a list for files
+          months[month].forEach(file => {
+            const fileItem = document.createElement('li');
+            fileItem.textContent = file; // Set file name as list item text
+            filesList.appendChild(fileItem);
+          });
 
-      // Append summary and content to details
-      details.appendChild(summary);
-      details.appendChild(detailsContent);
+          // Append the files list to the month details
+          monthDetails.appendChild(filesList);
 
-      // Append the details element to the gallery div
-      gallery.appendChild(details);
+          // Append the month details to the year details
+          yearDetails.appendChild(monthDetails);
+        }
+
+        // Append the year details to the gallery
+        gallery.appendChild(yearDetails);
+      }
     });
   })
   .catch(error => {
