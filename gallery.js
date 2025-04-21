@@ -1,4 +1,4 @@
-let galleryData = `https://raw.githubusercontent.com/spag-site/spag-site.github.io/`;
+let galleryData = `https://raw.githubusercontent.com/spag-site/spag-site.github.io/refs/heads/main/gallery.json`;
 const obj = JSON.parse(galleryData);
 
 const gallery = getElementById('gallery');
