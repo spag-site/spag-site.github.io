@@ -34,16 +34,19 @@ fetch(galleryDataUrl)
           monthSummary.textContent = month; // Set month as the summary text
           monthDetails.appendChild(monthSummary);
 
-          // Add files for the month
-          const filesList = document.createElement('ul'); // Use a list for files
+          // Add images for the files in the month
+          const imagesContainer = document.createElement('div'); // Container for images
           months[month].forEach(file => {
-            const fileItem = document.createElement('li');
-            fileItem.textContent = file; // Set file name as list item text
-            filesList.appendChild(fileItem);
+            const image = document.createElement('img');
+            image.src = `https://raw.githubusercontent.com/spag-site/spag-site.github.io/main/images/${file}`; // Set the image source
+            image.alt = file; // Set the alt text for the image
+            image.style.width = '150px'; // Optional: Set image width
+            image.style.margin = '5px';  // Optional: Add some spacing between images
+            imagesContainer.appendChild(image);
           });
 
-          // Append the files list to the month details
-          monthDetails.appendChild(filesList);
+          // Append the images container to the month details
+          monthDetails.appendChild(imagesContainer);
 
           // Append the month details to the year details
           yearDetails.appendChild(monthDetails);
