@@ -40,8 +40,8 @@ fetch(galleryDataUrl)
             const image = document.createElement('img');
             image.src = `https://spag-site.github.io${file}`; // Set the image source
             image.alt = file; // set alt text
-            image.class = "mi";
-            image.style.width = '320px'; // set image width
+            image.className = "mi";
+            image.style.width = '310px'; // set image width
             image.style.margin = '4px';  // spacing between images
             imagesContainer.appendChild(image);
           });
