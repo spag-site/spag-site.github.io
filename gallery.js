@@ -38,7 +38,7 @@ fetch(galleryDataUrl)
           const imagesContainer = document.createElement('div'); // container for images
           months[month].forEach(file => {
             const image = document.createElement('img');
-            image.src = `https://raw.githubusercontent.com/spag-site/spag-site.github.io/main/images/${file}`; // Set the image source
+            image.src = `https://spag-site.github.io${file}`; // Set the image source
             image.alt = file; // set alt text
             image.style.width = '150px'; // set image width
             image.style.margin = '5px';  // spacing between images
