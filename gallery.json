@@ -1,7 +1,7 @@
 [
 	{
 		"2025": {
-			"april": ["/images/one.jpg", "images/two.jpg", "https://spag-site.github.io/images/three.jpg", "/images/four.jpg"]
+			"april": ["/images/one.jpg", "/images/two.jpg", "/images/three.jpg", "/images/four.jpg"]
 		}
 	}
 ]
