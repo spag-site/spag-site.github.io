@@ -12,6 +12,10 @@
   text-decoration: none
 }
 
+.gallery {
+  overflow: scroll
+}
+
 .mi {
   cursor: zoom-in
 }
