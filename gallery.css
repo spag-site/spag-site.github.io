@@ -13,7 +13,8 @@
 }
 
 .gallery {
-  overflow: scroll
+  overflow: scroll;
+  max-height: 300px
 }
 
 .mi {
