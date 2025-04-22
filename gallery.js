@@ -1,6 +1,8 @@
 data.forEach(yearData => {
   // Extract and sort the years in descending order
-  const sortedYears = Object.keys(yearData).sort((a, b) => b - a);
+  const sortedYears = Object.keys(yearData)
+    .map(year => parseInt(year, 10)) // Convert keys to integers
+    .sort((a, b) => b - a); // Sort in descending order
 
   sortedYears.forEach(year => {
     // Create the year <details> section
