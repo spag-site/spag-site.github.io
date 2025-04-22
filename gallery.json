@@ -1,17 +1,7 @@
 [
 	{
-		"2026": {
-			"july": ["file1", "file2", "file3"],
-			"june": ["file1", "file2", "file3"],
-			"may": ["file1", "file2", "file3"],
-			"april": ["file1", "file2", "file3"]
-		},
-
 		"2025": {
-			"july": ["file1", "file2", "file3"],
-			"june": ["file1", "file2", "file3"],
-			"may": ["file1", "file2", "file3"],
-			"april": ["file1", "file2", "file3"]
+			"april": ["/images/one.jpg", "images/two.jpg", "https://spag-site.github.io/images/three.jpg", "/images/four.jpg"]
 		}
 	}
 ]
